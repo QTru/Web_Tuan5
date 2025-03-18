@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid vh-100" style="background-color: #282434;">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Feane</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-light" href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-light" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link active text-warning" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link text-light" href="book.html">BOOK TABLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-warning rounded-pill text-light px-4"
+                                data-bs-toggle="modal" data-bs-target="#modalId">Order
+                                Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row mt-5 text-light">
+            <div class="col text-end">
+                <img class="w-50" src="../img/about-img.png" alt="">
+            </div>
+            <div class="col d-flex align-items-center">
+                <div class="row w-75">
+                    <h1>We Are Feane</h1>
+                    <p class="w-100">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All
+                    </p>
+                    <button type="button" style="width: 130px;"
+                        class="btn btn-warning rounded-pill text-light px-4">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-warning" id="modalTitleId">
+                            Order
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form class="mt-4" action="">
+                                <label for="telephone" class="form-label">Telephone</label>
+                                <input type="text" name="telephone" id="telephone" class="form-control">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" name="email" id="email" class="form-control">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="check" id="check">
+                                    <label class="form-check-label" for="check">Check me out</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning text-black">
+                            Order
+                        </button>
+                        <button type="button" class="btn btn-warning text-black" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var modalId = document.getElementById('modalId');
+
+            modalId.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                let button = event.relatedTarget;
+                // Extract info from data-bs-* attributes
+                let recipient = button.getAttribute('data-bs-whatever');
+
+                // Use above variables to manipulate the DOM
+            });
+        </script>
+    </div>
+</body>
+
+</html>

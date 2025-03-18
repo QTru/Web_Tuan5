@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-image: url(../img/hero-bg.jpg); height: 100vh;">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Feane</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active text-warning" href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-light" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link text-light" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link text-light" href="book.html">BOOK TABLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-warning rounded-pill text-light px-4"
+                                data-bs-toggle="modal" data-bs-target="#modalId">Order
+                                Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row h-50" style="margin-top: 10%;">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-4">
+                <div id="carouselId" class="carousel slide h-100" data-bs-ride="carousel">
+                    <ol class="carousel-indicators mx-0 d-flex justify-content-start">
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%;"
+                            data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="First slide"></button>
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%;"
+                            data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></button>
+                        <button type="button" style="width: 10px; height: 10px; border-radius: 50%;"
+                            data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></button>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <h1 class="text-light">Fast Food Restaurant</h1>
+                            <p class="text-light">
+                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia
+                                laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste
+                                magni quos
+                                nihil ducimus libero ipsam.
+                            </p>
+                            <button type="button" class="btn btn-warning rounded-pill text-light px-4">Order
+                                Now</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="text-light">Fast Food Restaurant</h1>
+                            <p class="text-light">
+                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia
+                                laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste
+                                magni quos
+                                nihil ducimus libero ipsam.
+                            </p>
+                            <button type="button" class="btn btn-warning rounded-pill text-light px-4">Order
+                                Now</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="text-light">Fast Food Restaurant</h1>
+                            <p class="text-light">
+                                Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia
+                                laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste
+                                magni quos
+                                nihil ducimus libero ipsam.
+                            </p>
+                            <button type="button" class="btn btn-warning rounded-pill text-light px-4">Order
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6"></div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-warning" id="modalTitleId">
+                            Order
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form class="mt-4" action="">
+                                <label for="telephone" class="form-label">Telephone</label>
+                                <input type="text" name="telephone" id="telephone" class="form-control">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" name="email" id="email" class="form-control">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="check" id="check">
+                                    <label class="form-check-label" for="check">Check me out</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning text-black">
+                            Order
+                        </button>
+                        <button type="button" class="btn btn-warning text-black" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var modalId = document.getElementById('modalId');
+
+            modalId.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                let button = event.relatedTarget;
+                // Extract info from data-bs-* attributes
+                let recipient = button.getAttribute('data-bs-whatever');
+
+                // Use above variables to manipulate the DOM
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
